@@ -1,0 +1,628 @@
+/* css reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* my css */
+/* reset */
+body {
+    background-color: black;
+    font-family: arial, sans-serif;
+    font-size: .75rem;
+    letter-spacing: .03em;
+    color: white;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+/* Header1 */
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.head1container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0;
+}
+
+.head1container a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+.head1container .sideleft a:nth-child(1) {
+    margin: 20px 10px;
+}
+
+.head1container .sideright a {
+    padding: .8em .7em;
+    font-size: .67rem;
+    letter-spacing: 0;
+    background-color: #3b3b3b;
+    border-radius: 3px;
+}
+
+.head1container .sideright a:hover {
+    background-color: #f5f5f5;
+    color: black;
+    transition: .5s;
+}
+
+.head1container .sideleft a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+/* Header2 */
+
+.head2 {
+    background-color: #2e2e2e;
+    padding: 1.6em 0;
+}
+
+.head2container img {
+    height: 100%;
+}
+
+
+
+
+/* header 3 */
+.head3 {
+    background-color: #252525;
+}
+
+.head3container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.head3container ul li {
+    display: inline-block;
+}
+
+.head3container .ml {
+    margin-left: -.3em;
+}
+
+.head3container ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: .77rem;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    transition: .4s;
+}
+
+.head3container ul li a:hover {
+    background-color: rgb(0, 174, 255);
+}
+
+.head3container ul li:nth-child(1) a {
+    background-color: rgb(0, 174, 255);
+}
+
+.head3container form fieldset input {
+    height: 2.5em;
+    width: 18em;
+    margin-top: .2em;
+    padding: 1em;
+}
+
+.head3container form fieldset input:focus {
+    outline: none;
+}
+
+
+
+
+/* list biru */
+.list-biru {
+    background-color: rgb(0, 174, 255);
+    height: .4em;
+}
+
+
+
+
+/* content */
+.contentcontainer {
+    max-width: 1120px;
+    margin: 30px auto 10px;
+    background-color: #181818;
+    padding: .8em;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-bottom: 1.5em;
+}
+
+/* left side */
+
+
+.contentcontainer .warning {
+    background-color: rgb(73, 155, 231);
+    text-align: center;
+    padding: 1em;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 0;
+    font-size: 1.3em;
+    line-height: 1.3em;
+}
+
+.contentcontainer .leftside {
+    width: 68%;
+    margin-bottom: 1.5em;
+}
+
+
+
+/* on going anime */
+.contentcontainer .title-content {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2e2e2e;
+    height: 2.9em;
+    padding: .8em 1.3em 2.7em;
+}
+
+.contentcontainer .title-content a {
+    text-decoration: none;
+    color: white;
+    font-size: .94em;
+    background-color: rgb(0, 38, 255);
+    display: inline-block;
+    height: 2.1em;
+    padding: 0 .6em;
+    line-height: 2.1em;
+    font-weight: 800;
+    letter-spacing: .1;
+}
+
+.contentcontainer .title-content h5 {
+    font-size: 1.2em;
+    margin-top: .3em;
+    font-weight: 600;
+}
+
+/* on going content */
+.on-going-content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 1.9em;
+    column-gap: .8em;
+}
+
+
+/* CARD */
+.card {
+    height: 180px;
+    box-shadow: 2px 2px 5px 1px black;
+    display: inline-block;
+    position: relative;
+}
+
+.card .ispan {
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, .64);
+}
+
+.card a {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+}
+
+.card .episode {
+    top: 0;
+    padding: .5em 1em;
+}
+
+.card .date {
+    top: 25px;
+    font-size: .86em;
+    padding: .5em .9em;
+}
+
+.card .update {
+    right: 0;
+    top: 45%;
+    padding: .4em .8em;
+    background-color: rgba(7, 52, 255, 0.64);
+}
+
+.card .title {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 12.5em;
+    padding: .8em;
+    transition: .4s;
+}
+
+.card:hover .title {
+    top: 9.7em;
+}
+
+
+
+
+
+
+/* anime complited */
+.complited-content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 1.9em;
+    column-gap: .8em;
+}
+
+
+
+/* content rightside */
+.contentcontainer .rightside {
+    width: 29%;
+}
+
+
+
+
+/* content rightside content top */
+.rightside .background {
+    background-image: url(../img/backgroundsukaihalaman.jpg);
+    background-size: cover;
+}
+
+.rightside .sukaihalaman {
+    background-color: #3a3a3a;
+    padding: 1em;
+    font-size: 1.06em;
+}
+
+.rightside .background {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.rightside .content-top {
+    display: flex;
+    padding: 2em 1em;
+}
+
+.rightside .content-top h3 {
+    font-size: 1.4em;
+    font-weight: 700;
+    margin: .2em 0 .4em;
+}
+
+.rightside .content-top img {
+    width: 49px;
+    border: 4px solid rgb(133, 133, 133);
+}
+
+
+/* content rightside content bottom */
+.rightside .content-bottom {
+    display: flex;
+    padding: .8em 1em;
+    justify-content: space-between;
+    margin: 1.9em 0 .5em;
+}
+
+.rightside .content-bottom a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    background-color: white;
+    color: rgb(44, 44, 44);
+    padding: .2em .5em;
+    border-radius: 3px;
+}
+
+.rightside .content-bottom img {
+    margin-right: .6em;
+}
+
+.rightside .content-bottom h3 {
+    transform: translate(0, .4em);
+}
+
+.rightside .content-bottom .pelajarilebihlanjut {
+    padding: .6em 1.3em;
+}
+
+
+
+
+
+/* footer */
+footer {
+    background-color: #181818;
+}
+
+.footercontainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 4em 1em;
+    color: rgb(190, 190, 190);
+}
+
+.footercontainer p {
+    color: rgb(131, 131, 131);
+}
+
+.footercontainer .listcoklat {
+    height: 5px;
+    background-color: #3b3b3b;
+    margin: .9em 0;
+}
+
+.footercontainer .about,
+.footercontainer .tips,
+.footercontainer .info {
+    width: 32%;
+}
+
+.footercontainer h2 {
+    font-size: 1.1em;
+}
+
+.footercontainer p {
+    line-height: 1.4em;
+}
+
+
+/* footer 2 */
+.footer2 {
+    background-color: #0e0e0e;
+    padding: 1em;
+    text-align: center;
+    color: rgb(119, 119, 119);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive */
+
+
+@media (max-width:576px) {
+    .head2 {
+        text-align: center;
+    }
+
+    .head3container {
+        flex-direction: column;
+    }
+
+    .head3container ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .head3container ul li a {
+        width: 100%;
+    }
+
+    .head3container form fieldset input {
+        width: 100%;
+    }
+
+    .contentcontainer .leftside .on-going-content,
+    .contentcontainer .leftside .complited-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contentcontainer .leftside,
+    .contentcontainer .rightside {
+        width: 100%;
+    }
+
+    .contentcontainer {
+        flex-direction: column;
+    }
+
+    .contentcontainer .title-content {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .contentcontainer .title-content a {
+        font-size: .8em;
+    }
+
+    .card15 {
+        display: none;
+    }
+
+    .footercontainer {
+        flex-direction: column;
+    }
+
+    .footercontainer .about,
+    .footercontainer .tips,
+    .footercontainer .info {
+        width: 100%;
+        margin-bottom: 3em;
+    }
+
+}
